@@ -48,7 +48,7 @@ $(document).ready(function() {
             drops[i]++;
         }
     }
-    setInterval(draw, 35);
+    setInterval(draw, 69);
 
     // when browser size is resized, readjust the number of columns and drops
     window.addEventListener("resize", function() {
