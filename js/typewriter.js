@@ -2,8 +2,10 @@
 var i = 0,
     a = 0,
     g = 0,
+    j = 0,
     done = false,
     glitchdone = false,
+    japdone = false,
     isParagraph = false;
     currentParagraph = 0;
 
@@ -16,8 +18,13 @@ var glitchArray = [
     "Adrianov"
 ];
 
+var japaneseArray = [
+    '「無意味な世界で無政府状態を作り出す」'
+]
+
 // Speed (in milliseconds) of typing.
 var speedForward = 200, //Typing Speed
+    jspeedForward = 100, //Typing speed of Japanese characters
     speedBetweenLines = 600; //Wait between first and second lines
 
 //Run the loop
@@ -82,6 +89,29 @@ function glitchWriter(id, ar, gString) {
         glitchDiv.classList.add("glitch");
         glitchDiv.setAttribute("data-content", "Adrianov");
         glitchdone = true;
+        japaneseWriter("greetings-jp", japaneseArray, japaneseArray[j]);
+      }
+    }
+  }
+}
+
+function japaneseWriter(id, ar, jString) {
+  var element = $("#" + id),
+      japaneseParagraphs = document.getElementById(id).children;
+  
+  if (glitchdone == true) {
+    console.log(jString);
+    console.log(ar)
+    console.log(j)
+    if (!japdone) {
+      if (j < jString.length) {
+        japaneseParagraphs[0].classList.add("cursor");
+        japaneseParagraphs[0].textContent = japaneseParagraphs[0].textContent + jString.charAt(j);
+        j++;
+        setTimeout(function(){ japaneseWriter(id, ar, jString); }, jspeedForward);
+      }
+      else if (j == jString.length) {
+        japdone = true;
       }
     }
   }

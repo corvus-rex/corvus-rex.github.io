@@ -58,7 +58,7 @@ p {
 .cursor::after {
     content:'';
     display:inline-block;
-    margin-left:3px;
+    margin-left:1px;
     background-color:#39FF14;
     animation-name:blink;
     animation-duration:0.5s;
@@ -66,8 +66,8 @@ p {
 }
 
 .cursor::after {
-    height:30px;
-    width:12px;
+    height:24px;
+    width:6px;
 }
   
 @keyframes blink {
@@ -256,4 +256,14 @@ p {
   100% {
     clip-path: inset(80% 0 17% 0);
   }
+}
+
+#greetings-jp {
+  font-family: 'Courier New', Courier, monospace;
+  display: flexbox;
+  font-size: 16px;
+  color: #fff;
+  opacity: 1;
+  justify-content: center;
+  text-align: center;
 }
