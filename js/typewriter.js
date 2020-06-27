@@ -1,3 +1,6 @@
+// <------ Modified from Geoff Graham's Typewriter effect Javascript: https://css-tricks.com/snippets/css/typewriter-effect/ ------>//
+
+
 // values to keep track of the number of letters typed, which quote to use. etc. Don't change these values.
 var i = 0,
     a = 0,
@@ -67,6 +70,7 @@ function typeWriter(id, ar) {
     }
   }
 }
+// <------ End of  Typewriter effect Javascript from CSS Tricks ------>//
 
 function glitchWriter(id, ar, gString) {
   var element = $("#" + id),
@@ -97,7 +101,8 @@ function glitchWriter(id, ar, gString) {
 
 function japaneseWriter(id, ar, jString) {
   var element = $("#" + id),
-      japaneseParagraphs = document.getElementById(id).children;
+      japaneseParagraphs = document.getElementById(id).children,
+      btn_container = document.getElementById("button-container");
   
   if (glitchdone == true) {
     console.log(jString);
@@ -111,6 +116,8 @@ function japaneseWriter(id, ar, jString) {
         setTimeout(function(){ japaneseWriter(id, ar, jString); }, jspeedForward);
       }
       else if (j == jString.length) {
+        console.log("done")
+        btn_container.style.display = "block";
         japdone = true;
       }
     }

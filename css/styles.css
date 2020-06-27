@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow|Tomorrow:400,700&display=swap");
+
 body {
     margin: 0;
     padding: 0;
@@ -9,7 +11,7 @@ p {
 }
 
 .content {
-    position: relative;
+    display: block;
 }
 
 #matrix-rain {
@@ -55,6 +57,8 @@ p {
     /* text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #FF6EC7, 0 0 20px #FF6EC7, 0 0 25px #FF6EC7, 0 0 30px #FF6EC7, 0 0 35px #FF6EC7; */
 }
 
+/* Modified from Geoff Graham's Typewriter effect CSS: https://css-tricks.com/snippets/css/typewriter-effect/ */
+
 .cursor::after {
     content:'';
     display:inline-block;
@@ -85,15 +89,16 @@ p {
   }
 }
 
+/* End of Typewriter CSS from CSS Tricks */
+
 #to-glitch {
   /* font-family: "Varela", sans-serif; */
   /* font-family: 'Courier New', Courier, monospace; */
   font-size: 42px;
 }
 
+/* Glitched font CSS modified from: https://css-tricks.com/glitch-effect-text-images-svg/ */
 .glitch {
-  /* font-family: "Varela", sans-serif; */
-  /* font-family: 'Courier New', Courier, monospace; */
   font-size: 42px;
   position: relative;
   display: inline;
@@ -257,6 +262,8 @@ p {
     clip-path: inset(80% 0 17% 0);
   }
 }
+/* End of glitched font CSS from CSS Tricks */
+
 
 #greetings-jp {
   font-family: 'Courier New', Courier, monospace;
@@ -267,3 +274,208 @@ p {
   justify-content: center;
   text-align: center;
 }
+
+#about {
+  display: none;
+  font-family:  'Courier New', Courier, monospace;
+  margin-top: 24px;
+  font-size: 18px;
+  color: #FFF;
+  justify-content: center;
+  text-align: center;
+}
+
+#contact {
+  display: none;
+  font-family:  'Courier New', Courier, monospace;
+  margin-top: 24px;
+  font-size: 24px;
+  color: #FFF;
+  justify-content: center;
+  text-align: center;
+}
+
+a {
+  color: #39FF14;
+  font-size: 36px;
+  text-decoration: none;
+}
+
+#button-container {
+  display: none;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  z-index: 3;
+  max-width: 400px;
+  width: auto;
+  text-align: center;
+}
+
+/* How to make Cyberpunk CSS button by Leandro RR https://dev.to/leandroruel/how-to-make-a-cyberpunk-2077-button-with-css-c9m */
+
+.cyber-btn {
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  width: 180px;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  padding: 20px 25px;
+  position: relative;
+  font-family: Tomorrow, sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
+}
+
+.cyber-btn-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background-color: #39FF14;
+  clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
+}
+
+.cyber-btn-glitch {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #39FF14;
+  filter: drop-shadow(-2px 3px #67e3f3) drop-shadow(-1px -3px #02d8f3) drop-shadow(2px 1px #02d8f3);
+}
+
+.cyber-btn:hover .cyber-btn-glitch,
+.cyber-btn:hover .cyber-btn-content::after{
+  display: inline-block;
+  animation: glitch-animation 2s linear 0s infinite;
+}
+
+@keyframes glitch-animation {
+  0% {
+    opacity: 1;
+    transform: translateZ(0);
+    clip-path: polygon(0 2%, 100% 2%, 100% 5%, 0 5%);
+  }
+
+  2% {
+    clip-path: polygon(0 78%, 100% 78%, 100% 100%, 0 100%);
+    transform: translate(-5px);
+  }
+
+  6% {
+    clip-path: polygon(0 78%, 100% 78%, 100% 100%, 0 100%);
+    transform: translate(5px);
+  }
+
+  8% {
+    clip-path: polygon(0 78%, 100% 78%, 100% 100%, 0 100%);
+    transform: translate(-5px);
+  }
+
+  9% {
+    clip-path: polygon(0 78%, 100% 78%, 100% 100%, 0 100%);
+    transform: translate(0);
+  }
+
+  10% {
+    clip-path: polygon(0 54%, 100% 54%, 100% 44%, 0 44%);
+    transform: translate3d(5px, 0, 0);
+  }
+
+  13% {
+    clip-path: polygon(0 54%, 100% 54%, 100% 44%, 0 44%);
+    transform: translateZ(0);
+  }
+
+  13.1% {
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    transform: translate3d(5px, 0, 0);
+  }
+
+  15% {
+    clip-path: polygon(0 60%, 100% 60%, 100% 40%, 0 40%);
+    transform: translate3d(5px, 0, 0);
+  }
+
+  20% {
+    clip-path: polygon(0 60%, 100% 60%, 100% 40%, 0 40%);
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  20.1% {
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    transform: translate3d(5px, 0, 0);
+  }
+
+  25% {
+    clip-path: polygon(0 85%, 100% 85%, 100% 40%, 0 40%);
+    transform: translate3d(5px, 0, 0);
+  }
+
+  30% {
+    clip-path: polygon(0 85%, 100% 85%, 100% 40%, 0 40%);
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  30.1% {
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+  }
+
+  35% {
+    clip-path: polygon(0 63%, 100% 63%, 100% 80%, 0 80%);
+    transform: translate(-5px);
+  }
+
+  40% {
+    clip-path: polygon(0 63%, 100% 63%, 100% 80%, 0 80%);
+    transform: translate(5px);
+  }
+
+  45% {
+    clip-path: polygon(0 63%, 100% 63%, 100% 80%, 0 80%);
+    transform: translate(-5px);
+  }
+
+  50% {
+    clip-path: polygon(0 63%, 100% 63%, 100% 80%, 0 80%);
+    transform: translate(0);
+  }
+
+  55% {
+    clip-path: polygon(0 10%, 100% 10%, 100% 0, 0 0);
+    transform: translate3d(5px, 0, 0);
+  }
+
+  60% {
+    clip-path: polygon(0 10%, 100% 10%, 100% 0, 0 0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+
+  60.1% {
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    opacity: 1;
+  }
+
+  to {
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    opacity: 1;
+  }
+}
+
+/* End of Leandro RR's Cyberpunk button */

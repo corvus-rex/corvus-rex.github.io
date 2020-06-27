@@ -1,3 +1,5 @@
+// <------- Modified from Ebram Marzouk's codepen https://codepen.io/P3R0/pen/MwgoKv ------->
+
 $(document).ready(function() {
 
     var mrain = document.getElementById("matrix-rain");
@@ -49,6 +51,7 @@ $(document).ready(function() {
         }
     }
     setInterval(draw, 69);
+// <------- End of Ebram Marzouk's codepen ------->
 
     // when browser size is resized, readjust the number of columns and drops
     window.addEventListener("resize", function() {
