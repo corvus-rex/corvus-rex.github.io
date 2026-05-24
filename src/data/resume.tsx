@@ -74,7 +74,6 @@ export const DATA = {
       description:
         "Develop various AI-powered applications and services such as face-verification digital signage, AI avatar video platform, and textile defect detection",
     },
-
     {
       company: "PT Dgas Alam Semesta",
       href: "https://dgas.co.id/index.html",
