@@ -137,6 +137,7 @@ export const DATA = {
         },
       ],
       image: "/cover.png",
+      video: ""
     },
     {
       title: "BitTrack",
@@ -189,6 +190,7 @@ export const DATA = {
         },
       ],
       image: "/cover.png",
+      video: ""
     },
     {
       title: "Project Adversarial",
@@ -211,6 +213,7 @@ export const DATA = {
         },
       ],
       image: "/cover.png",
+      video: ""
     },
   ],
   awards: [
