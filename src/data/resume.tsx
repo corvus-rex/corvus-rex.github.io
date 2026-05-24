@@ -49,19 +49,6 @@ export const DATA = {
 
         navbar: true,
       },
-      Discord: {
-        name: "Discord",
-        url: "-",
-        icon: Icons.discord,
-
-        navbar: true,
-      },
-      Matrix: {
-        name: "Matrix",
-        url: "-",
-        icon: Icons.matrix,
-        navbar: true,
-      },
       email: {
         name: "Send Email",
         url: "#",
@@ -266,55 +253,20 @@ export const DATA = {
 
 
   ],
-  hackathons: [
+  awards: [
     {
-      title: "A Real-time Autonomous Face-tracking System Based On A 2-dof Articulated Manipulator Platform Using Extended Kalman Filter ",
-      dates: "July ’21",
-      location: "Acta Mechanica - Springer",
+      title: "Top 10 Finalists - Bank Indonesia Hackathon 2024",
+      dates: "August '24",
+      location: "JCC Senayan, Jakarta, Indonesia",
       description:
-        "Developed a web application which aggregates social media data regarding cryptocurrencies and predicts future prices.",
+        "Top 10 Finalist in Bank Indonesia Hackathon 2024 out of 2,200 participants and 450+ proposal. Led a team of four to develop BitTrack, an app that flags suspicious cryptocurrency transactions using machine learing and deep learning, enabling users to track Bitcoin address trust scores and improve ecosystem accountability.",
       image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/developer-week.jpg",
+        "https://media.licdn.com/dms/image/v2/D5622AQEyy8Nmeg8bZA/feedshare-shrink_1280/feedshare-shrink_1280/0/1723192953806?e=1781136000&v=beta&t=0223tpEwANlN2oypgu6Bxqd3piUw3hB4_TWod2y7iH0",
       links: [
         {
-          title: "Github",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://doi.org/nbng",
-        },
-      ],
-    },
-
-    {
-      title: "Design & Development of a Web-Based Robotics Simulator ",
-      dates: "Oct ’20",
-      location: "Elsevier",
-      description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [
-        {
-          title: "doi",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://doi.org/nbnh",
-        },
-      ],
-    },
-    {
-      title: "Design & Implementation of an IoT Based 3-Axis CNC VMC",
-      dates: "September 14th - 16th, 2018",
-      location: "IJSER",
-      description:
-        "Developed a mobile application which delivers university campus wide events in real time to all students.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-north.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [
-        {
-          title: "doi",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://rb.gy/msw8g1",
+          title: "Certificate",
+          icon: <Icons.linkedin className="h-4 w-4" />,
+          href: "https://www.linkedin.com/in/adrian-n-riadi-7769201b1/overlay/Honor/834445853/treasury/?profileId=ACoAADFvokoBwBlHaJnDvc3q59hX0BVGhBfQTY8",
         },
       ],
     },
