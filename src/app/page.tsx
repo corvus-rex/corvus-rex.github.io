@@ -299,7 +299,7 @@ export default function Page() {
                 Achievements & Recognition
               </h2>
               <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                A collection of {DATA.awards.length} awards and recognitions
+                A collection of awards and recognitions
                 I&apos;ve received throughout my career.
               </p>
             </div>

@@ -17,6 +17,7 @@ export const DATA = {
     "Javascript",
     "Typescript",
     "Dart",
+    "C++",
     "FastAPI",
     "Django",
     "Flask",
@@ -26,7 +27,8 @@ export const DATA = {
     "Flutter",
     "PostgreSQL",
     "MongoDB",
-    
+    "Redis",
+    "PyTorch"
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -84,6 +86,17 @@ export const DATA = {
       end: "July 2021",
       description: "Developed Graphical User Interface that enables inventory-tracking of corporate assets and human resource",
     },
+    {
+      company: "PT Dirgantara Indonesia",
+      href: "https://www.indonesian-aerospace.com/en/",
+      badges: [],
+      location: "Remote",
+      title: "Intern Software Engineer",
+      logoUrl: "/ptdi.png",
+      start: "February 2020",
+      end: "June 2020",
+      description: "Developed a web-based architecture to streamline flight test data insertion, Extract-Transform-Load (ETL) and query for flight test analysis purposes",
+    },
   ],
   education: [
     {
@@ -94,164 +107,112 @@ export const DATA = {
       start: "2024",
       end: "2026",
     },
+    {
+      school: "International University Liaison Indonesia",
+      href: "https://ugm.ac.id/",
+      degree: "Bachelor's of Computer Science(S.Kom) in Computer Science",
+      logoUrl: "/iuli.jpg",
+      start: "2017",
+      end: "2021",
+    },
   ],
   projects: [
     {
-      title: "Sim C",
-      href: "https://aamitn.github.io/simc",
-      dates: "Jan 2024 - Feb 2024",
+      title: "Felix Natalis",
+      href: "",
+      dates: "April 2026",
       active: true,
       description:
-        "This is a web based circuit cimulator , which was originally written in Java and runs in modern browser engines using Google web Toolkit(GWT)",
+        "A birthday reminder backend microservice written in Node.js and TypeScript. It registers users with their birthday and timezone, schedules notification jobs using a Redis-backed queue, and delivers birthday messages via configurable notification channels",
       technologies: [
-        "Java",
-        "Javascript",
-        "GWT",
-        "HTML5",
-        "AWT GUI",
+        "Typescript",
+        "Express",
+        "Node.js",
+        "MongoDB",
       ],
       links: [
         {
-          type: "Website",
-          href: "https://aamitn.github.io/simc/circuitjs.html",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/aamitn/simc",
+          type: "Repository",
+          href: "https://github.com/corvus-rex/Felix-Natalis",
           icon: <Icons.github className="size-3" />,
         },
-
       ],
-      image: "/simc.png",
-      video: "",
+      image: "/cover.png",
     },
     {
-      title: "Pulsebridge",
-      href: "https://github.com/aamitn/pulsebridge-gateway/",
-      dates: "June 2023 - Present",
+      title: "BitTrack",
+      href: "https://www.youtube.com/watch?v=UN6PQKMyjAk",
+      dates: "April 2024 - August 2024",
       active: true,
       description:
-        "PulseBridge Gateway Server is a powerful SMS Gateway software that allows you to send SMS messages seamlessly. Whether you're looking to integrate SMS functionality into your web applications or send messages from a centralized server, PulseBridge Gateway makes the process efficient and straightforward along with mobile client application",
+        "An effort to combat money-laundering, fraud, scam, and illegal transactions within cryptocurrency network. BitTack, flags suspicious cryptocurrency transactions using both traditional machine learning and deep learning approaches.",
       technologies: [
-        "PHP",
-        "Java",
-        "PostgreSQL",
+        "Python",
+        "FastAPI",
+        "MongoDB",
+        "PyTorch",
+        "Google Cloud Platforms"
       ],
       links: [
         {
-          type: "Source",
-          href: "https://github.com/aamitn/pulsebridge-app/",
+          type: "Repository",
+          href: "https://github.com/Br4vo-Six/inference-engine",
           icon: <Icons.github className="size-3" />,
         },
         {
-          type: "Source",
-          href: "https://github.com/aamitn/pulsebridge-gateway/",
-          icon: <Icons.github className="size-3" />,
-        },
+          type: "Pitch",
+          href: "https://www.youtube.com/watch?v=UN6PQKMyjAk",
+          icon:  <Icons.youtube className="size-3"/>
+        }
       ],
       image: "/cover.png",
       video: "",
     },
     {
-      title: "TUSC-URL Shortener",
-      href: "https://github.com/aamitn/URLShortener/",
-      dates: "April 2023 - September 2023",
+      title: "Project Odysseus",
+      href: "",
+      dates: "February 2021 - June 2021",
       active: true,
-      description:" A powerful and scalable URL shortener with integrated bio pages built using Spring Boot. ",
+      description:
+        "A web-based news platform site utilizing Ethereum blockchain’s distributed ledger as a mean to disincentivize the spread of fake news and avoid media censorship.",
       technologies: [
-        "Java",
-        "Thymeleaf",
         "Javascript",
-        "Spring Boot",
-        "MySQL",
-        "React",
-        "Tailwind",
+        "Vue.js",
+        "Node.js",
+        "MongoDB",
+        "Solidity"
       ],
       links: [
         {
-          type: "Source",
-          href: "https://github.com/aamitn/URLShortener",
+          type: "Repository",
+          href: "https://github.com/corvus-rex/project-odysseus",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/tusc.png",
-      video: "",
+      image: "/cover.png",
     },
     {
-      title: "TrakRok",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
+      title: "Project Adversarial",
+      href: "",
+      dates: "June 2025 - January 2026",
       active: true,
-      description:" Open Source GPS tracking hardware code for Arduino and middleware for Traccar tracking software",
+      description: 
+        "Defense against adversarial patch attack in deep learning-based pedestrian detection utilizing compression-based segmentation, traditional feature-based classifier augmented with Generative Adversarial Network to perform image inpainting in areas occluded by adversarial patch.",
       technologies: [
-        "PHP",
-        "MySQL",
-        "Javascript",
+        "Python",
+        "PyTorch",
+        "Scikit-learn",
+        "YOLOv5"
       ],
       links: [
         {
-          type: "Website",
-          href: "https://automatic.chat",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
-    },
-
-    {
-      title: "Tagger",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
-      active: true,
-      description:" Tagger is a versatile Java application designed to simplify the process of replacing tags within text content. It provides a user-friendly GUI that allows users to interactively replace tag in a structured manner.",
-      technologies: [
-        "JAVA",
-        "AWT",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://automatic.chat",
-          icon: <Icons.globe className="size-3" />,
+          type: "Repository",
+          href: "https://github.com/corvus-rex/project-adversarial",
+          icon: <Icons.github className="size-3" />,
         },
       ],
       image: "/cover.png",
-      video:
-        "",
     },
-
-    {
-      title: "NDC-NewDocGen",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
-      active: true,
-      description:
-        "A template-based report generation engine that supports vectors, repeatable content and high-availability, high-volume processing capability.",
-      technologies: [
-        "Java",
-        "JPA",
-        "Spring",
-        "Apache POI",
-        "Postgres",
-        "React",
-        "PDFBox",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://automatic.chat",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/cover.png",
-      video:
-        "",
-    },
-
-
   ],
   awards: [
     {
