@@ -3,8 +3,10 @@
 const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
+  output: 'export',             // generates static HTML/CSS/JS
   reactStrictMode: true,
   images: {
+    unoptimized: true, 
     remotePatterns: [
       {
         protocol: "https",
