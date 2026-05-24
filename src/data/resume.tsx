@@ -130,7 +130,7 @@ export const DATA = {
         "MongoDB",
       ],
       links: [
-        {
+        { 
           type: "Repository",
           href: "https://github.com/corvus-rex/Felix-Natalis",
           icon: <Icons.github className="size-3" />,
