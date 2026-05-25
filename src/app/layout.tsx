@@ -20,23 +20,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   // Safe fallback handling for metadata properties
-  const siteUrl = metadata?.metadataBase?.href || "https://aamitn.github.io";
-  const siteTitle = metadata?.title || "Amit Nandi - Portfolio";  // Directly use metadata.title
-  const siteDescription = metadata?.description || "Software Developer, Analyst, and Tech Enthusiast.";
+  const siteUrl = metadata?.metadataBase?.href || "";
+  const siteTitle = metadata?.title || "Adrian Naufal Riadi - Portfolio";  // Directly use metadata.title
+  const siteDescription = metadata?.description || "Software Engineer";
 
   // JSON-LD Structured Data
   const jsonLdPerson = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Amit Nandi",
-    "jobTitle": "Software Developer, Analyst",
+    "name": "Adrian Naufal Riadi",
+    "jobTitle": "Software Engineer",
     "url": siteUrl,
     "sameAs": [
-      "https://github.com/aamitn",
-      "https://linkedin.com/in/aamitn",
-      "https://twitter.com/amit_nandi"
+      "https://github.com/corvus-rex",
+      "https://linkedin.com/in/https://www.linkedin.com/in/adrian-n-riadi-7769201b1/",
     ],
-    "image": "https://amitn.netlify.app/me.png",
+    "image": "https://drive.google.com/thumbnail?id=1nSPF60wolD_Qf92gi9LB4jJO-1Vj1Lvi",
     "description": siteDescription
   };
 

@@ -15,8 +15,8 @@ export const metadata: Metadata = {
     description: DATA.description,
     keywords: [
       DATA.name,
-      "Software Developer",
-      "Analyst",
+      "Software Engineer",
+      "Data Engineer",
       "Enterprise Apps",
       "Open Source",
       "Scalable Systems",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
       },
     },
     openGraph: {
-      title: `${DATA.name} | Software Developer | Analyst`,
+      title: `${DATA.name} | Software Engineer`,
       description: DATA.description,
       url: DATA.url,
       siteName: DATA.name,
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
       type: "profile",
       images: [
         {
-          url: "https://amitn.netlify.app/meog1.png", // Fallback image URL
+          url: "https://drive.google.com/thumbnail?id=1nSPF60wolD_Qf92gi9LB4jJO-1Vj1Lvi", // Fallback image URL
           width: 1200,
           height: 630,
           alt: DATA.name,
@@ -55,14 +55,14 @@ export const metadata: Metadata = {
     },
     twitter: {
       card: "summary_large_image",
-      site: "@aamitn",
-      creator: "@aamitn",
+      site: "",
+      creator: "",
       title: DATA.name,
       description: DATA.description,
-      images: ["https://amitn.netlify.app/meog.png"], // Fallback image
+      images: [""], // Fallback image
     },
     verification: {
-      google: "Oeb9ojsNiPsDJod_fV54S6M-N4fIKUUfVKQIN4f69Rs",
+      google: "",
       yandex: "",
     },
     other: {
