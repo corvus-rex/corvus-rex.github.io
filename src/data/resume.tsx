@@ -140,35 +140,6 @@ export const DATA = {
       video: ""
     },
     {
-      title: "BitTrack",
-      href: "https://www.youtube.com/watch?v=UN6PQKMyjAk",
-      dates: "April 2024 - August 2024",
-      active: true,
-      description:
-        "An effort to combat money-laundering, fraud, scam, and illegal transactions within cryptocurrency network. BitTack, flags suspicious cryptocurrency transactions using both traditional machine learning and deep learning approaches.",
-      technologies: [
-        "Python",
-        "FastAPI",
-        "MongoDB",
-        "PyTorch",
-        "Google Cloud Platforms"
-      ],
-      links: [
-        {
-          type: "Repository",
-          href: "https://github.com/Br4vo-Six/inference-engine",
-          icon: <Icons.github className="size-3" />,
-        },
-        {
-          type: "Pitch",
-          href: "https://www.youtube.com/watch?v=UN6PQKMyjAk",
-          icon:  <Icons.youtube className="size-3"/>
-        }
-      ],
-      image: "/cover.png",
-      video: "",
-    },
-    {
       title: "Project Odysseus",
       href: "",
       dates: "February 2021 - June 2021",
